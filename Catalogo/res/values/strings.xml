@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Catalogo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_listado_aplicaciones">ListadoAplicacionesActivity</string>
+    <string name="title_activity_listado_categorias">ListadoCategoriasActivity</string>
+    <string name="title_activity_detalle_aplicacion">DetalleAplicacionActivity</string>
+
+</resources>
