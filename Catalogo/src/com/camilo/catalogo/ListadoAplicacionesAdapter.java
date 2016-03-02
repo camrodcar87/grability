@@ -96,15 +96,7 @@ public class ListadoAplicacionesAdapter extends ArrayAdapter<ClassAplicacionBO> 
 	public ArrayList<ClassAplicacionBO> getAplicaciones() {
 		return aplicaciones;
 	}
-	
-	
-	
-	
-	/*public MenuAdapter(Context context,int idListado ,int recurso, ArrayList<ClassAplicacionBO> aplicaciones) {
-		
-		
-	}
-	*/
+
 	
 
 	

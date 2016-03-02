@@ -20,7 +20,7 @@ public class ClassFachadaSolicitudes extends AsyncTask<ClassFachadaSolicitudesBO
 	private Activity activity;
 	private ComunicacionFachadaCallback callback;
 	private int tareaRealizar = 0;
-	private ProgressDialog dialogoProgreso;
+	//private ProgressDialog dialogoProgreso;
 	
 	public ClassFachadaSolicitudes(Activity activity, int tareaRealizar,
 			ComunicacionFachadaCallback callback) {
@@ -37,14 +37,14 @@ public class ClassFachadaSolicitudes extends AsyncTask<ClassFachadaSolicitudesBO
 			return;
 		}
 		
-		dialogoProgreso = new ProgressDialog(activity);
+		/*dialogoProgreso = new ProgressDialog(activity);
 		dialogoProgreso.setIndeterminate(false);
 		dialogoProgreso.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 		dialogoProgreso
 				.setMessage("Comunicación en proceso...");
 		dialogoProgreso.setCancelable(false);
 		dialogoProgreso.setCanceledOnTouchOutside(false);
-		dialogoProgreso.show();
+		dialogoProgreso.show();*/
 	}
 	
 	@Override
@@ -93,8 +93,8 @@ public class ClassFachadaSolicitudes extends AsyncTask<ClassFachadaSolicitudesBO
 	protected void onPostExecute(ClassFachadaSolicitudesBO result) {
 		// TODO Auto-generated method stub
 		super.onPostExecute(result);
-		if (dialogoProgreso != null)
-			dialogoProgreso.dismiss();
+		/*if (dialogoProgreso != null)
+			dialogoProgreso.dismiss();*/
 		callback.tareaFinalizada(result);
 	}
 

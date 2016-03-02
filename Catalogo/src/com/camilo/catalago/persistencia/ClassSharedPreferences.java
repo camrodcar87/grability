@@ -26,33 +26,19 @@ public class ClassSharedPreferences {
 	
 
 	
-	/**
-	 * Metodo para acceder directamente a las Shared Preferences.
-	 * Se encarga de editar una clave
-	 * @param dato
-	 * @param clave
-	 */
 	private boolean editarString(String clave, String valor){
 		Editor editor = this.sharedPreferences.edit();
 		editor.putString(clave, valor);
 		boolean insercion = editor.commit();
 		return insercion;
 	}
-	/**
-	 * Metodo para acceder directamente a las Shared Preferences.
-	 * Se encarga de eliminar toda la informacion existente
-	 */
+	
 	public void eliminarDatos(){
 		Editor editor = this.sharedPreferences.edit();
 		editor.clear();
 		editor.commit();
 	}
 	
-	/**
-	 * Este metodo consulta directamente las shared preferences.
-	 * @param clave
-	 * @return
-	 */
 	private String consultarString(String clave){
 		Map<String, ?> todos = sharedPreferences.getAll();
 		if(sharedPreferences.contains(clave))
